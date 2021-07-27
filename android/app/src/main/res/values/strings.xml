@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Messenger Clone</string>
+  <string name="facebook_app_id">516356416243765</string>
+  <string name="fb_login_protocol_scheme">fb516356416243765</string>
+</resources>

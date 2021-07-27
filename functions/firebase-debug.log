@@ -1,0 +1,58 @@
+[debug] [2021-07-27T08:43:54.758Z] ----------------------------------------------------------------------
+[debug] [2021-07-27T08:43:54.760Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nysha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2021-07-27T08:43:54.760Z] CLI Version:   9.12.0
+[debug] [2021-07-27T08:43:54.760Z] Platform:      win32
+[debug] [2021-07-27T08:43:54.760Z] Node Version:  v12.18.2
+[debug] [2021-07-27T08:43:54.761Z] Time:          Tue Jul 27 2021 14:13:54 GMT+0530 (India Standard Time)
+[debug] [2021-07-27T08:43:54.761Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-27T08:43:54.768Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-27T08:43:54.769Z] > authorizing via signed-in user (nyshadhamramu@gmail.com)
+[debug] [2021-07-27T08:43:54.769Z] [iam] checking project messenger-889a7 for permissions ["firebase.projects.get"]
+[debug] [2021-07-27T08:43:54.771Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-27T08:43:54.771Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-27T08:43:55.304Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 27 Jul 2021 08:43:55 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T08:43:55.318Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/messenger-889a7:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-27T08:43:57.161Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Jul 2021 08:43:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1410","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T08:43:57.164Z] > refreshing access token with scopes: []
+[debug] [2021-07-27T08:43:57.164Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-27T08:43:57.602Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 27 Jul 2021 08:43:58 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T08:43:57.634Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/messenger-889a7 [none]
+[debug] [2021-07-27T08:44:18.742Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/messenger-889a7
+[debug] [2021-07-27T08:44:19.278Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/messenger-889a7
+    at Client.doRequest (C:\Users\nysha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project messenger-889a7. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-07-27T08:44:29.370Z] ----------------------------------------------------------------------
+[debug] [2021-07-27T08:44:29.372Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nysha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2021-07-27T08:44:29.372Z] CLI Version:   9.12.0
+[debug] [2021-07-27T08:44:29.372Z] Platform:      win32
+[debug] [2021-07-27T08:44:29.372Z] Node Version:  v12.18.2
+[debug] [2021-07-27T08:44:29.373Z] Time:          Tue Jul 27 2021 14:14:29 GMT+0530 (India Standard Time)
+[debug] [2021-07-27T08:44:29.373Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-27T08:44:29.380Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-27T08:44:29.380Z] > authorizing via signed-in user (nyshadhamramu@gmail.com)
+[debug] [2021-07-27T08:44:29.380Z] [iam] checking project messenger-889a7 for permissions ["firebase.projects.get"]
+[debug] [2021-07-27T08:44:29.382Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-27T08:44:29.382Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-27T08:44:29.860Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 27 Jul 2021 08:44:30 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T08:44:29.896Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/messenger-889a7:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-27T08:44:31.668Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Jul 2021 08:44:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1349","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T08:44:31.671Z] > refreshing access token with scopes: []
+[debug] [2021-07-27T08:44:31.671Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-27T08:44:32.130Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 27 Jul 2021 08:44:32 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T08:44:32.146Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/messenger-889a7 [none]
+[debug] [2021-07-27T08:44:53.196Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/messenger-889a7
+[debug] [2021-07-27T08:44:53.699Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/messenger-889a7
+    at Client.doRequest (C:\Users\nysha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:211:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project messenger-889a7. Please make sure the project exists and your account has permission to access it.
